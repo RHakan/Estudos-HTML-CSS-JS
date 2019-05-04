@@ -5,29 +5,49 @@ body{
     color: rgba(0, 0, 0, 1)
 }
 
-/*Eu amo minha mulher com todo o meu coração*/
 
 div#interface {
     width:  900px; /*Delimita tamanho da interface em 800px de largura */
-    background-color: #ffffff;
+    background-color: #ffffff; /*define a cor de fundo*/
     margin: -20px auto 0px auto; /*Deine o espaçamento das margens = cima/direita/baixo/esquerda*/
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /*coloca uma ombra na caixa */
     padding: 10px; /* define espaçamento dentro do container / 1 valor = navegador considera as 4 margens*/
 }
 
 p{
-    text-align: justify;
-    text-indent: 50px;
+    text-align: justify; /*define o alinhamento do paragrafo*/
+    text-indent: 50px; /* define a identação do paragrafo*/
 }
 
 header#cabecalho img#icone{
-    position: absolute;
+    position: absolute; /*absolute coloca o item em questão em qualquer lugar do site*/
     left: 955px;
-    top: 40px;
+    top: 70px;
 }
 
 header#cabecalho {
-    /* teste pra ver se funcionou rsrs*/
+    border-bottom: 1px #606060 solid; /* coloca uma linha de delimitação (largura cor tipo)*/
+    height: 150px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px; /* .. para voltar para a pasta anterior / no-repeat para n preencher todo o BG com a IMG / parametro deslocamento lateral + parametro deslocamento vertical*/
+    
+}
+
+header#cabecalho h1{
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+
+}
+
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 5px; /*margem especifica, para todas usa-se o margin solo (cima direita baixo esquerda)*/
 }
 
 /* Formatação de fotos com legenda*/

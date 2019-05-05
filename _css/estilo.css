@@ -6,8 +6,8 @@
 }
 
 body{
-    background-color: #dddddd;
-    color: rgba(0, 0, 0, 1)
+    background-color: #dddddd;/*Seleciona a cor de fundo*/
+    color: rgba(0, 0, 0, 1)/*seleciona a cor*/
 }
 
 
@@ -23,6 +23,7 @@ p{
     text-align: justify; /*define o alinhamento do paragrafo*/
     text-indent: 50px; /* define a identação do paragrafo*/
 }
+/*formatação do cabeçalho*/
 
 header#cabecalho img#icone{
     position: absolute; /*absolute coloca o item em questão em qualquer lugar do site*/
@@ -124,5 +125,31 @@ nav#menu a{
     }
 
 nav#menu a:hover{
-    color: #ffffff
+    color: #ffffff /*seleciona cor quando passa o mouse sobre a ancora*/
+}
+
+/*formatação section#corpo*/
+
+section#corpo {
+    display: block; /*ser mostrado como um bloco*/
+    width: 570px; /*define a largura do bloco*/
+    float: left; /*flutua a esquerda*/
+    border-right: 1px solid #606060; /*define a linha lateral de divisão (largura/tipo/cor)*/
+    padding-right: 15px; /*configura o espaçamento de dentro do bloco*/
+}
+/*formataçao lateral*/
+aside#lateral {
+    display: block; /*ser mostrado como um bloco*/
+    width: 300px;   /*define a largura do bloco*/
+    float: right;   /*flutua a direita*/
+}
+/*formatação rodapé*/
+footer#rodape {
+    clear: both; /*limpa as configuraçoes anteriores do bloco*/
+    border-top: 1px solid #606060; /*define a linha lateral de divisão (largura/tipo/cor)*/
+    
+}
+
+footer#rodape p{
+    text-align: center;
 }

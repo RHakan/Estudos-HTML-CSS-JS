@@ -137,6 +137,22 @@ section#corpo {
     border-right: 1px solid #606060; /*define a linha lateral de divisão (largura/tipo/cor)*/
     padding-right: 15px; /*configura o espaçamento de dentro do bloco*/
 }
+
+table#tabelaspec {
+    border: 1px solid #606060; /* cria uma borda de 4 lados por ter apenas um parametro de px*/
+    border-spacing: 0px; /*define o espaço padrao que existe entre as bordas da celula*/
+    margin-left: auto; /*define espaçamento da borda direita*/
+    margin-right: auto; /*define espaçamento da borda esquerda*/
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060; /* cria uma borda de 4 lados por ter apenas um parametro de px*/
+    padding: 5px; /*margem interna da box*/
+    text-align: center; /*centraliza o texto*/
+    vertical-align: top; /*Alinhamento vertical do conteudo*/
+
+}
+
 /*formataçao lateral*/
 aside#lateral {
     display: block; /*ser mostrado como um bloco*/
@@ -151,5 +167,10 @@ footer#rodape {
 }
 
 footer#rodape p{
-    text-align: center;
+    text-align: center; /*alinhamento de texto do paragrafo*/
+}
+
+footer#rodape a {
+    color: black; /*define a cor da ancora*/
+    text-decoration: none; /*redtira decoração da ancora*/
 }

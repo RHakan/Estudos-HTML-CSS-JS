@@ -1,7 +1,12 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web'); /*importação de fontes - google.com/fonts*/
+@font-face {
+    font-family: 'fontLogo'; /*dando 'ID' para a fonte externa*/
+    src: url(../_fonts/bubblegum-sans-regular.otf); /*selecionando fonte externa para usar no site*/
+}
 
 body{
-    background-color: dddddd;
+    background-color: #dddddd;
     color: rgba(0, 0, 0, 1)
 }
 
@@ -33,17 +38,17 @@ header#cabecalho {
 }
 
 header#cabecalho h1{
-    font-family: Arial, sans-serif;
-    font-size: 30pt;
-    color: #606060;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-family: 'fontLogo' sans-serif; /*seleciona a fonte a ser utilizada */
+    font-size: 30pt; /*seleciona o tamanho da fonte*/
+    color: #606060; /* seleciona a cor da fonte*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /*cria uma sombra para o texto (deslocamento lateral/altura/largura/cor )*/
     padding: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px;/*margem bot*/
 
 }
 
 header#cabecalho h2 {
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
     color: #888888;
     padding: 0px;
@@ -74,6 +79,7 @@ figure.foto-legenda figcaption{
     padding: 10px;
     box-sizing: border-box;
     transition: opacity 0.8s;
+
 }
 
 figure.foto-legenda:hover figcaption{
@@ -97,9 +103,9 @@ nav#menu ul {
 
 nav#menu li {
     display: inline-block; /*alinha o menu em um bloco horizontal*/
-    background-color: #dddddd;
+    background-color: #dddddd;/*define a cor de fundo*/
     padding: 10px; /*configura o espaçamento dentro da box*/
-    margin: 2px;
+    margin: 2px; /*Define a margem, para 1 parametro define-se a mesma margem para todos os lados*/
     transition: background-color 0.5s; /*altera a velocidade da transição quando passar o mouse no menu*/
 
 }

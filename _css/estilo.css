@@ -6,6 +6,7 @@
 }
 
 body{
+    font-family: Arial, sans-serif; /*define a fonte */
     background-color: #dddddd;/*Seleciona a cor de fundo*/
     color: rgba(0, 0, 0, 1)/*seleciona a cor*/
 }
@@ -22,6 +23,15 @@ div#interface {
 p{
     text-align: justify; /*define o alinhamento do paragrafo*/
     text-indent: 50px; /* define a identação do paragrafo*/
+}
+
+a{
+    color: #606060;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
 }
 /*formatação do cabeçalho*/
 
@@ -65,8 +75,8 @@ figure.foto-legenda{
 }
 
 figure.foto-legenda img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /*define largura*/
+    height: 100%; /*define altura*/
 }
 
 figure.foto-legenda figcaption{
@@ -120,8 +130,8 @@ nav#menu h1 {
 }
 
 nav#menu a{
-    color: black; /*altera a cor de fundo da ancora do menu*/
-    text-decoration: none; /*tira o sublinhado das ancoras do menu*/
+    color: black; /*altera a cor da fonte da ancora do menu*/
+    
     }
 
 nav#menu a:hover{
@@ -132,11 +142,52 @@ nav#menu a:hover{
 
 section#corpo {
     display: block; /*ser mostrado como um bloco*/
-    width: 570px; /*define a largura do bloco*/
+    width: 560px; /*define a largura do bloco*/
     float: left; /*flutua a esquerda*/
     border-right: 1px solid #606060; /*define a linha lateral de divisão (largura/tipo/cor)*/
     padding-right: 15px; /*configura o espaçamento de dentro do bloco*/
 }
+
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'fontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+.direita {
+    text-align: right;
+}
+
+
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+
+    
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #606060;
+    
+     
+    
+}
+
 
 table#tabelaspec {
     border: 1px solid #606060; /* cria uma borda de 4 lados por ter apenas um parametro de px*/
@@ -149,7 +200,37 @@ table#tabelaspec td {
     border: 1px solid #606060; /* cria uma borda de 4 lados por ter apenas um parametro de px*/
     padding: 5px; /*margem interna da box*/
     text-align: center; /*centraliza o texto*/
-    vertical-align: top; /*Alinhamento vertical do conteudo*/
+    vertical-align: middle; /*Alinhamento vertical do conteudo*/
+
+}
+
+table#tabelaspec td.ce{
+    color: #ffffff; /*define a cor da fonte*/
+    background-color: #606060; /*define a cor de fundo*/
+    vertical-align: top; /*alinhamento do texto para a celula de cima*/
+    text-align: right; /*alinhamento do texto a direita*/
+    font-weight: bold; /*negrito na fonte*/
+
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+
+}
+
+table#tabelaspec caption span{
+    color: #000000;
+    display: block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 10px;
 
 }
 
@@ -158,7 +239,30 @@ aside#lateral {
     display: block; /*ser mostrado como um bloco*/
     width: 300px;   /*define a largura do bloco*/
     float: right;   /*flutua a direita*/
+    background-color: #dddddd;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
 }
+
+aside#lateral h1{
+    font-family: 'fontLogo';
+    font-size: 20pt;
+    color: #606060; 
+    margin-top: 0px;
+   
+
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px; 
+    margin-top: 10px;
+    
+}
+
 /*formatação rodapé*/
 footer#rodape {
     clear: both; /*limpa as configuraçoes anteriores do bloco*/
@@ -168,9 +272,4 @@ footer#rodape {
 
 footer#rodape p{
     text-align: center; /*alinhamento de texto do paragrafo*/
-}
-
-footer#rodape a {
-    color: black; /*define a cor da ancora*/
-    text-decoration: none; /*redtira decoração da ancora*/
 }

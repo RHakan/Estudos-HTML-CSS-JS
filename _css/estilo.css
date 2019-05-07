@@ -142,7 +142,7 @@ nav#menu a:hover{
 
 section#corpo {
     display: block; /*ser mostrado como um bloco*/
-    width: 560px; /*define a largura do bloco*/
+    width: 540px; /*define a largura do bloco*/
     float: left; /*flutua a esquerda*/
     border-right: 1px solid #606060; /*define a linha lateral de divisão (largura/tipo/cor)*/
     padding-right: 15px; /*configura o espaçamento de dentro do bloco*/
@@ -237,7 +237,7 @@ table#tabelaspec caption span{
 /*formataçao lateral*/
 aside#lateral {
     display: block; /*ser mostrado como um bloco*/
-    width: 300px;   /*define a largura do bloco*/
+    width: 320px;   /*define a largura do bloco*/
     float: right;   /*flutua a direita*/
     background-color: #dddddd;
     padding: 10px;
